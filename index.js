@@ -6,7 +6,7 @@ let count = 0;
 
 function increase()
 {
-    x.innerText = count++;
+    x.innerText = ++count;
 
     let hue = (count % 10) * 36;
 
@@ -16,7 +16,7 @@ function increase()
 function cl()
 {
     count = 0;
-    x.innerText = count++;
+    x.innerText = count;
     x.style.color = "white";
 }
 
