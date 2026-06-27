@@ -6,13 +6,11 @@ let count = 0;
 
 function increase()
 {
-    x.innerText = count;
+    x.innerText = count++;
 
     let hue = (count % 10) * 36;
 
     x.style.color = `hsl(${hue}, 100%, 50%)`;
-
-    count++;
 }
 
 function cl()
