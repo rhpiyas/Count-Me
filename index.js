@@ -13,7 +13,8 @@ function increase()
 
 function cl()
 {
-    x.innerHTML = count = 0
+    count = 0;
+    x.innerText = count++;
 }
 
 let a = document.getElementsByClassName("button")[0]
