@@ -4,7 +4,7 @@ let x = document.getElementsByClassName("count")[0]
 
 let bt2 = document.getElementsByClassName("button2")[0]
 
-let count = 0;
+let count = 1;
 
 function increase()
 {
