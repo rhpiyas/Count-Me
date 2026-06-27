@@ -1,23 +1,28 @@
-document
+let x = document.getElementsByClassName("count")[0];
 
-let x = document.getElementsByClassName("count")[0]
+let bt2 = document.getElementsByClassName("button2")[0];
 
-let bt2 = document.getElementsByClassName("button2")[0]
-
-let count = 1;
+let count = 0;
 
 function increase()
 {
-    x.innerText = count++;
+    x.innerText = count;
+
+    let hue = (count % 10) * 36;
+
+    x.style.color = `hsl(${hue}, 100%, 50%)`;
+
+    count++;
 }
 
 function cl()
 {
     count = 0;
     x.innerText = count++;
+    x.style.color = "white";
 }
 
-let a = document.getElementsByClassName("button")[0]
+let a = document.getElementsByClassName("button")[0];
 
 a.onclick = increase;
-bt2.onclick = cl
+bt2.onclick = cl;
