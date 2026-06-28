@@ -6,6 +6,7 @@ A static website that do nothing but count your click.
 A simple counter web application built using HTML, CSS, and JavaScript.  
 This project demonstrates basic DOM manipulation and event handling in JavaScript.
 
+Live preview: https://rhpiyas.github.io/Count-Me/
 ---
 
 ## 🚀 Features
