@@ -25,15 +25,22 @@ function dec()
     if(count <= 0)
     {
         count = 0;
+        x.style.color = "white";
     }
     else
     {
         x.innerHTML = --count;
-    }
-    
-    let hue = (count % 10) * 36;
 
-    x.style.color = `hsl(${hue}, 100%, 50%)`;
+        if(count == 0)
+        {
+            x.style.color = "white";
+        }
+        else
+        {
+            let hue = (count % 10) * 36;
+            x.style.color = `hsl(${hue}, 100%, 50%)`;
+        }
+    }
 }
 
 
